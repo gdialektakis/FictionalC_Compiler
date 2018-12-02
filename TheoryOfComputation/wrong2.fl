@@ -1,0 +1,47 @@
+program foo;
+
+
+var i,j,n: integer;
+    k: real;
+    myboolean: boolean;
+    array1d: array[10] of integer; 
+    array2d: array[10][5] of integer;
+    array3d: array[3][7][4] of integer;
+    array4d: array of char;
+
+begin
+for i:=0 to 10 do
+  begin 
+  array1d[i]:=0
+    for j:=0 to 7  do 
+       begin 
+        array2d[i][j]:=0
+            for n:=0 to 4  do  
+             array3d[i][j][n]:= 0
+        end   
+  end ;
+    n:=1;
+    k:=2;
+    array1d[1] := 4;
+    array1d[2] := 20 / array1d[0];
+    array2d[1][2] := (18 + 5 - array1d[1])/2;
+    array3d[1+n][1][2] :=  (integer) (k+9);
+    myboolean:=false;
+    j:=8;
+    n:=-3;
+    while ( j=5 or n < 0 and k>0) //do forgotten
+        begin
+        if (k div 2 = 0) //then forgotten
+            printf("k is an even")
+        
+    else if not myboolean then
+        begin
+            goto label 
+           
+        end
+
+            
+    end;
+
+
+end.
